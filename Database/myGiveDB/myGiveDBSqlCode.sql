@@ -1,5 +1,5 @@
 create user 'myGive'@'%' identified by 'myGive';
-create database myGive
+create database myGive;
 use myGive
 grant all privileges on myGive.* to myGive with grant option;
 flush privileges;
