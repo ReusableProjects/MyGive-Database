@@ -8,7 +8,7 @@ show grants for 'myGive'@'%';
 
 
 
-create table certification(
+create table Certification(
 	 userNum INT NOT NULL,
 	dateTime DATETIME NOT NULL,
 	certType ENUM('receipt', 'photo') DEFAULT 'receipt',
@@ -34,7 +34,7 @@ create table User(
 	contributedList LONGTEXT,
 	
 	PRIMARY KEY(userNum),
-	FOREIGN KEY(userNum) REFERENCES user(userNum),
+	FOREIGN KEY(userNum) REFERENCES User(userNum),
 	UNIQUE(userNum, nickName)
 	);
 
@@ -43,7 +43,7 @@ create table User(
 	authorityScope ENUM('owner', 'manager') DEFAULT 'manager',
 	
 	PRIMARY KEY(userNum),
-	FOREIGN KEY(userNum) REFERENCES user(userNum),
+	FOREIGN KEY(userNum) REFERENCES User(userNum),
 	UNIQUE(userNum)
 	);
 create table ContributedOrganization(
@@ -55,7 +55,7 @@ create table ContributedOrganization(
 	contributorList LONGTEXT,
 	
 	PRIMARY KEY(userNum)
-	FOREIGN KEY(userNUM) REFERENCES user(userNum),
+	FOREIGN KEY(userNUM) REFERENCES User(userNum),
 	UNIQUE(userNum, organizationName, fax, homePage)
 	);
 create table CardInfo(
@@ -66,7 +66,7 @@ create table CardInfo(
 	expiryDate DATE NOT NULL,
 	
 	PRIMARY KEY(userNum),
-	FOREIGN KEY(userNum) REFERENCES user(userNum),
+	FOREIGN KEY(userNum) REFERENCES User(userNum),
 	UNIQUE(userNum, cardNum)
 	);
 create table Post(
