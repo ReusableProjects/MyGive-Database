@@ -1,0 +1,23 @@
+INSERT INTO User(name, pwd, email, tel) VALUES('김혜린', '1234', 'tlfzgjadyd4@gmail.com', '01057520474');
+INSERT INTO User(name, pwd, email, tel) VALUES('변경탁', '1234', 'take7813@gmail.com', '01053318564');
+INSERT INTO User(name, pwd, email, tel) VALUES('오수열', '1234', 'phantomoh98@gmail.com', '01031907125');
+
+INSERT INTO Contributor(userNum, nickName) VALUES(1, 'tlfzgjadyd');
+INSERT INTO Contributor(userNum, nickName) VALUES(2, 'take');
+INSERT INTO Contributor(userNum, nickName) VALUES(3, 'phantomoh');
+
+INSERT INTO Staff(userNum, authorityScope) VALUES(1, 'owner');
+INSERT INTO Staff(userNum, authorityScope) VALUES(2, 'owner');
+INSERT INTO Staff(userNum, authorityScope) VALUES(3, 'owner');
+
+
+INSERT INTO CardInfo(userNum, cardNum, cardPwd, birthDate, expiryDate) VALUES(1, '1111111111111111', 1234, 0828, 0722);
+INSERT INTO CardInfo(userNum, cardNum, cardPwd, birthDate, expiryDate) VALUES(2, '2222222222222222', 1234, 0123, 0722);
+INSERT INTO CardInfo(userNum, cardNum, cardPwd, birthDate, expiryDate) VALUES(3, '3333333333333333', 1234, 0101, 0722);
+
+INSERT INTO Certification(userNum, dateTime, certType, certContent) VALUES(1, '2021-09-04 10:00:00', 'receipt', 'https://user-images.githubusercontent.com/47634717/132084671-923c50eb-1c57-4bb5-af60-38677b62336b.jpg');
+INSERT INTO Certification(userNum, dateTime, certType, certContent) VALUES(2, '2021-04-08 15:18:39', 'receipt', 'https://user-images.githubusercontent.com/47634717/132084672-adc484e7-9bb9-4a41-9b09-ce7a42c3db65.jpg');
+INSERT INTO Certification(userNum, dateTime, certType, certContent) VALUES(3, '2010-05-02 20:03:00', 'receipt', 'https://user-images.githubusercontent.com/47634717/132084675-ed94ebb7-6610-444c-bb73-2ccf140a2bb6.jpg');
+INSERT INTO Certification(userNum, dateTime, certType, certContent) VALUES(1, '2021-09-04 10:00:00', 'photo', 'https://user-images.githubusercontent.com/47634717/132084890-ed5238c9-5fe0-44d8-992b-a312a6bef25b.jpg');
+INSERT INTO Certification(userNum, dateTime, certType, certContent) VALUES(2, '2021-04-08 15:18:39', 'photo', 'https://user-images.githubusercontent.com/47634717/132084889-13c06505-f7f4-4a59-bac9-1a3cd9709624.jpg');
+INSERT INTO Certification(userNum, dateTime, certType, certContent) VALUES(3, '2010-05-02 20:03:00', 'photo', 'https://user-images.githubusercontent.com/47634717/132084932-a837f70c-056a-4116-aa4d-415c696e2ae9.jpg');
