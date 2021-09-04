@@ -14,7 +14,7 @@ create table Certification(
 	certType ENUM('receipt', 'photo') DEFAULT 'receipt',
 	certContent BLOB,
 	
-	PRIMARY KEY(userNum, dateTime)
+	PRIMARY KEY(userNum, dateTime, certType)
 	);
 
 create table User(
