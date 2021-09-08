@@ -1,3 +1,4 @@
+#api교체 대비용 더미데이터입니다
 INSERT INTO CardHistory(cardNum, historyNum, historyContent) VALUES('1111-1111-1111-1111', 0,
 json_object(
          'dataHeader',  json_object(
