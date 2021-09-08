@@ -5,5 +5,5 @@ create table CardHistory(
     dateTime datetime NOT NULL,
     price INT NOT NULL DEFAULT 0,
     
-    PRIMARY KEY(cardNum)
+    PRIMARY KEY(cardNum, historyNum)
     );
